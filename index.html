@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+
+    <!--lupa de buscador-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- carrito de compra-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <title> e-commerce con Grid </title>
+
+</head>
+
+<body>
+    <div class="grid-container"> <!--PADRE--> <!-- 4 BLOQUES GRID-->
+
+        <header> <!-- 3 BLOQUES FLEX: BOTON DE BUSQUEDA / IMG LOGO / ENLACES DE NAV-->
+            <div class="buscador">
+                <button class="btn"> <strong> Buscador </strong> <span class="material-symbols-outlined"> search </span> </button>
+            </div>
+            <div> <img src="./assets/img/logo1.jpeg" class="logo"> </div>
+            <nav>
+                <p>
+                    <strong> <!--STRONG PARA RESALTAR-->
+                        <a href="default.asp" alt="ofertas" class="enlace_nav">Ofertas</a>
+                        <a href="default.asp" alt="blog" class="enlace_nav">Blog </a>
+                        <a href="default.asp" alt="tienda" class="enlace_nav">Tiendas </a>
+                        <a href="default.asp" alt="contacto" class="enlace_nav">Contacto </a>
+                        <a href="default.asp" alt="carrito"><span class="material-symbols-outlined"> shopping_cart_checkout </span></a>
+                    </strong>
+                </p>
+            </nav>
+        </header>
+
+        <aside> <!-- menu lateral izquierdo--> <!-- 2 BLOQUES FLEX-->
+            <div class="categoria"> <!--1ER BLOUE con 2 sub-bloques-->
+                <h4> CATEGORIAS </h4>
+                <div class="zapatos">
+                    <h5> ZAPATOS </h5>
+                    <a href="default.asp" alt="botas" class="enlace_cat">Botas </a> <span class="num">(12)</span><br>
+                    <a href="default.asp" alt="sandalias" class="enlace_cat">Saldalias </a><span class="num">(34)</span><br>
+                    <a href="default.asp" alt="tacos" class="enlace_cat">Tacos altos </a><span class="num">(47)</span><br>
+                    <a href="default.asp" alt="zapatillas" class="enlace_cat">Zapatillas </a><span class="num">(18)</span><br>
+                </div>
+                <div class="accesorios">
+                    <h5> ACCESORIOS </h5>
+                    <a href="default.asp" alt="cartera" class="enlace_cat">Carteras </a><span class="num">(17)</span><br>
+                    <a href="default.asp" alt="joyeria" class="enlace_cat">Joyeria </a><span class="num">(75)</span><br>
+                    <a href="default.asp" alt="bufanda" class="enlace_cat">Bufandas </a><span class="num">(7)</span><br>
+                    <a href="default.asp" alt="calcetin" class="enlace_cat">Calcetines </a><span class="num">(12)</span>
+                </div>
+            </div>
+            <div class="tienda"> <!--2DO BLOQUE-->
+                <a href="default.asp" alt="tiendas">Nuestras tiendas</a><br>
+                <a href="default.asp" alt="horario">Horario de atencion</a>
+            </div>
+        </aside>
+
+        <main> <!-- BLOUE GRID PARA PRODUCTOS EN TARJETAS-->
+            <div class="card">
+                <figure class="img_card"> <img src="./assets/img/prod1.JPG" alt="img_card" class="img_prod"> <figcaption> <h5> Inspiracion cielo rosa</h5> <p>$ 115.990 </p></figcaption></figure>
+                <div class="comprar">
+                    <button class="btn"> <strong> Comprar </strong> <span class="material-symbols-outlined"> shopping_cart_checkout </span></button>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="img_card"> <img src="./assets/img/prod2.JPG" alt="img_card" class="img_prod"> <figcaption> <h5> Inspiracion debajo del mar</h5> <p>$ 115.990 </p></figcaption></figure>
+                <div class="comprar">
+                    <button class="btn"> <strong> Comprar </strong> <span class="material-symbols-outlined"> shopping_cart_checkout </spanr> </button>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="img_card"> <img src="./assets/img/prod3.JPG" alt="img_card" class="img_prod"> <figcaption> <h5> Inspiracion Alicia maravillosa </h5> <p>$ 115.990 </p></figcaption></figure>
+                <div class="comprar">
+                    <button class="btn"> <strong> Comprar </strong> <span class="material-symbols-outlined"> shopping_cart_checkout </span> </button>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="img_card"> <img src="./assets/img/prod4.JPG" alt="img_card" class="img_prod"> <figcaption> <h5> Inspiracion Hello Kitty dark</h5> <p>$ 115.990 </p></figcaption></figure>
+                <div class="comprar">
+                    <button class="btn"> <strong> Comprar </strong> <span class="material-symbols-outlined"> shopping_cart_checkout </span> </button>
+                </div>
+            </div>
+        </main>
+
+        <footer> <!-- 3 BLOQUES FLEX: AYUDA / INF DEL SITIO / REDES SOCIALES-->
+            <div class="bloque_tex">
+                <div class="ayuda">
+                    <a href="default.asp" alt="tienda" class="enlace_foo">Tiendas</a><br>
+                    <a href="default.asp" alt="devolucion" class="enlace_foo">Devolucion</a><br>
+                    <a href="default.asp" alt="talla" class="enlace_foo">Guía de tallas </a>
+                </div>
+                <div class="inf">
+                    <a href="default.asp" alt="privacidad" class="enlace_foo">Politica de privacidad</a><br>
+                    <a href="default.asp" alt="condiciones" class="enlace_foo">Condiciones de uso</a><br>
+                    <a href="default.asp" alt="reembolso" class="enlace_foo">Politica de reembolso </a>
+                </div>
+             </div>
+            <div class="bloque_redes">
+                <div class="redes">
+                    <a href="https://www.instagram.com/irregularchoice/" alt="instagram"><img src="./assets/img/logo_ig.png" alt="instagram"> </a>
+                    <a href="https://twitter.com/irregularchoice" alt="twiter"><img src="./assets/img/logo_x.png" alt="twiter"> </a>
+                    <a href="https://www.pinterest.co.uk/irregularchoice/" alt="pinterest"><img src="./assets/img/logo_pinterest.png" alt="pinterest"> </a>
+                    <a href="https://www.facebook.com/IrregularChoice/" alt="facebbok"><img src="./assets/img/logo_facebook.png" alt="facebbok"> </a>
+                    <a href="https://www.tiktok.com/@irregularchoiceofficial" alt="tiktok"><img src="./assets/img/logo_tiktok.png" alt="tiktok"> </a> <br>
+                    <p>Derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+

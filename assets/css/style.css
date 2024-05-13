@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ********** HEADER ************************************************************************ */
+header {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    grid-area: header; /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> RENOMBRE DEL AREA HEADER */
+}
+.buscador{ /*bloque del buscador*/
+    display: grid;
+    place-items: center;
+}
+.btn{
+    background-color: rgb(152, 251, 251);
+    width: 330px;
+    border: none;
+    color:rgb(10, 97, 129);
+    cursor: progress;
+}
+.btn:hover { /*propiedades al pasar el cursor*/
+    background-color: #f196c7;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: purple;
+}
+.logo{ /* BLOQUE PARA EL LOGO CENTARL */
+    height: 50px;
+}
+nav{ /* BLOQUER PARA EL NAV */
+    display: grid;
+    place-items: center;
+    color:#e23792;
+}
+     /* PRPIEDADES PARA LOS LINK DE NAV*/
+.enlace_nav:link { /*link sin visitar*/
+    color: #e23792;
+}
+.enlace_nav:hover{/*propiedades al pasar el cursor*/
+    color:rgb(38, 187, 65);
+}
+/* ********** MENU LATERAL IZQUIERDO ******************************************************* */
+aside { 
+    grid-area: menu; /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> RENOMBRE DEL AREA MENU */
+    display: flex; /* ********** lateral flex ********** */
+    flex-direction: column; /* vertical */
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    background: rgb(248,227,249);
+    background: linear-gradient(90deg, rgba(248,227,249,1) 0%, rgba(151,63,251,1) 100%);
+    color: black;
+    padding: 5px;
+}
+.categoria div{
+    padding: 5px;
+}
+.enlace_cat:link{
+    color: purple;
+}
+.enlace_cat:hover{
+    color: yellow;
+}
+.tienda a:link{
+    color: black;
+}
+.tienda a:hover{
+    color: yellow;
+}
+
+/* ********** BLOUE PRINCIPAL DE LOS PRODUCTOS ******************************************* */
+main{ /*BLOQUE PARA LAS TARJETAS*/
+    display: grid; /* ********** grilla de productos */
+    grid-area: ppal; /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> RENOMBRE DEL AREA PPAL */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    color: white;
+    background: rgb(151,63,251);
+    background: linear-gradient(90deg, rgba(151,63,251,1) 0%, rgba(252,70,139,1) 100%);
+    padding: 5px;
+}
+main p{
+    font-size: 16px; #fc468b
+}
+.card{ /* ******************** tarjetas flex */
+    display: flex;
+    flex-direction: column; /* vertical */
+    justify-content: center;
+    width: 330px;
+}
+.num{
+    color: rgb(196, 190, 190)
+}
+.img_prod{
+   width: 330px
+}
+
+figcaption{
+    width: 330px;
+}
+
+/* ********** FOOTER ********** */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer; /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> RENOMBRE DEL AREA FOOTER */
+    background: rgb(245, 210, 245);
+}
+.bloque_tex{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    background-color: none;
+    font-size: 12px;
+}
+.ayuda{
+    padding: 3px;
+}
+.inf{
+    padding: 3px;
+}
+.bloque_redes{
+    text-align: center;
+}
+.redes img{
+    width: 30px;
+    border-radius: 50%;
+}
+.redes p{
+    font-size: 10px;
+}
+.redes a{
+    cursor: progress;
+}
+.enlace_foo:link {
+    color: rgb(183, 14, 160);
+}
+
+.grid-container{
+    display: grid; /* ******************** layout grid ******************** */
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows: 0.3fr 2fr 0.3fr;
+    grid-template-areas:
+    'header header'
+    'menu ppal'
+    'footer footer';
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
